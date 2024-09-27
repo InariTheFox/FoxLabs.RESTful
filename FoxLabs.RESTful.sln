@@ -1,0 +1,21 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{D52CCD51-061C-4E87-B8A1-C30354CA38C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoxLabs.RESTFul", "src\FoxLabs.RESTFul\FoxLabs.RESTFul.csproj", "{03109A4C-B682-4713-B81B-F6313A74B0F5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{03109A4C-B682-4713-B81B-F6313A74B0F5} = {D52CCD51-061C-4E87-B8A1-C30354CA38C8}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{03109A4C-B682-4713-B81B-F6313A74B0F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03109A4C-B682-4713-B81B-F6313A74B0F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03109A4C-B682-4713-B81B-F6313A74B0F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03109A4C-B682-4713-B81B-F6313A74B0F5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
