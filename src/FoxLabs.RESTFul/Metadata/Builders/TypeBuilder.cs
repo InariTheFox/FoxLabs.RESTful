@@ -4,12 +4,12 @@ namespace FoxLabs.RESTFul.Metadata.Builders
 {
     public class TypeBuilder : TypeBaseBuilder
     {
-        public TypeBuilder(ITypeMetadata metadata, ModelBuilder modelBuilder)
+        public TypeBuilder(TypeMetadata metadata, ModelBuilder modelBuilder)
             : base(metadata, modelBuilder)
         {
         }
 
-        public virtual ITypeMetadata Metadata
+        public virtual TypeMetadata Metadata
             => base.Metadata;
     }
 }

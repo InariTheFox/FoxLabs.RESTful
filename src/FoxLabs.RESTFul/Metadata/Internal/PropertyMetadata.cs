@@ -9,6 +9,10 @@ namespace FoxLabs.RESTFul.Metadata.Internal
         public PropertyMetadata(string name, PropertyInfo? propertyInfo, FieldInfo? fieldInfo, TypeBaseMetadata declaringType)
         {
             Builder = new(this, declaringType.Model.Builder);
+
+            Name = name;
+            ReturnType = declaringType.Model.FindType(propertyInfo.PropertyType)
+                            ?? declaringType.Model.AddType(propertyInfo.PropertyType);
         }
 
         public PropertyBuilder Builder { get; }

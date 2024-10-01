@@ -10,6 +10,7 @@
         public TypeBaseMetadata(Type type, Model model)
         {
             Model = model;
+            ClrType = type;
         }
         
         public Type ClrType { get; }

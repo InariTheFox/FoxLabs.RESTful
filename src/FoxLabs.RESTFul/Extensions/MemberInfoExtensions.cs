@@ -5,6 +5,12 @@ namespace FoxLabs.RESTFul
     public static class MemberInfoExtensions
     {
         public static Type GetMemberType(this MemberInfo memberInfo)
-            => (memberInfo as PropertyInfo)?.PropertyType ?? ((FieldInfo)memberInfo).FieldType;
+            => memberInfo switch
+            {
+                FieldInfo field => field.FieldType,
+                PropertyInfo property => property.PropertyType,
+                MethodInfo method => method.ReturnType,
+                _ => null
+            };
     }
 }

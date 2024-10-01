@@ -32,6 +32,8 @@
 
         IActionMetadata[] GetActions();
         
-        IPropertyMetadata GetProperty(string name);
+        IActionMetadata? GetAction(string name);
+        
+        IPropertyMetadata? GetProperty(string name);
     }
 }

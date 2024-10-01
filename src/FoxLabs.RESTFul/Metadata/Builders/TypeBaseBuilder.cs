@@ -5,12 +5,12 @@ namespace FoxLabs.RESTFul.Metadata.Builders
 {
     public abstract class TypeBaseBuilder
     {
-        public TypeBaseBuilder(ITypeMetadata metadata, ModelBuilder modelBuilder)
+        public TypeBaseBuilder(TypeMetadata metadata, ModelBuilder modelBuilder)
         {
             Metadata = metadata;
         }
 
-        protected ITypeMetadata Metadata { get; }
+        protected TypeMetadata Metadata { get; }
 
         public PropertyBuilder Property(Type? propertyType, string propertyName)
             => Property(propertyType, propertyName, memberInfo: null);
